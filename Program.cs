@@ -46,3 +46,19 @@ for (int i = 0; i < grades.Count; i++)
 }
 
 / jhkjhjkhkjhj
+
+List<double> grades = new List<double>(){6.5, 9.5, 5, 4, 4.5, 10, 7.1};
+
+for (int i = 0; i < grades.Count; i++)
+{   
+    System.Console.WriteLine(grades[i]);
+    if (grades[i] < 5.5)
+    {   
+        string answer = Console.ReadLine().ToLower();
+        if (answer == "y")
+        {
+            grades[i]++;
+            System.Console.WriteLine(grades[i]);
+        }
+    }
+}
